@@ -1,0 +1,83 @@
+function reverseNumber(n) {
+let str = n.toString();
+let reversedStr = "";
+for (let i = str.length - 1; i>=0; i--){
+reversedStr += str[i];
+  }
+return Number(reversedStr);
+
+}
+console.log(reverseNumber(123))   // 321
+console.log(reverseNumber(1500))  // 51
+console.log(reverseNumber(7))     // 7
+console.log(reverseNumber(1000))  // 1
+
+
+
+
+
+
+function countChar(str, char) {
+let count=0;
+for(let c of str){if(c===char){
+count ++;}
+}
+return count;
+}
+console.log(countChar('javascript', 'a'))   // 2
+console.log(countChar('hello world', 'l'))  // 3
+console.log(countChar('banana', 'z'))       // 0
+
+
+
+
+
+
+function classifyTemp(celsius) {
+if (celsius < 0){
+ return "freezing";
+} else if (celsius <= 10) {
+return "cold";
+} else if (celsius <= 20) {
+return "cool"; 
+}else if (celsius <= 30){
+return "warm";
+ } else{
+ return "hot";
+}
+}
+console.log(classifyTemp(-5))  // "Freezing"
+console.log(classifyTemp(0))   // "Cold"
+console.log(classifyTemp(15))  // "Cool"
+console.log(classifyTemp(25))  // "Warm"
+console.log(classifyTemp(35))  // "Hot"
+
+
+
+
+
+function findMax(a, b, c) {
+if(a >= b && a >= c) {
+return a;
+}else if (b>= a && b>= c){
+return b;
+}else{
+return c;
+}
+}
+console.log(findMax(3, 7, 2))     // 7
+console.log(findMax(10, 10, 5))   // 10
+console.log(findMax(-1, -5, -3))  // -1
+
+
+
+function safeJsonParse(str, fallback) {
+  try{
+return JSON.parse(str);
+}catch (error) {
+ return fallback;
+   }
+}
+console.log(safeJsonParse('{"a":1}', {}))     // { a: 1 }
+console.log(safeJsonParse('not json', {}))    // {}
+console.log(safeJsonParse('[1,2,3]', null))   // [1, 2, 3]

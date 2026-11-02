@@ -1,0 +1,37 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viweport" content="width=with-device" inital-scale="1.0">
+        <title> calm down </title>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <td> monday</td>
+                    <td> tuesday</td>
+                    <td>wednesday</td>
+                    <td>thursday</td>
+                    <td>friday</td>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>study </td>
+                        <td> play</td>
+                        <td> study</td>
+                        <td>play</td>
+                        <td>study</td>
+                    </tr>
+                </tbody>   
+        </table>
+        <h2>
+            ? FAQ
+        </h2>
+        <details>
+            <SUmmary>HOW CAN HELP?</SUmmary>
+            <P>GIVE ME MONEY</P>
+        </details>
+    </body>
+</html>
